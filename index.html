@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>رسالة صغيرة لبطوطة 💌</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #49313d;
+      background: linear-gradient(135deg, #fff0f5, #fffaf0, #f2eaff);
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: min(760px, 92%);
+      margin: 30px auto;
+      padding: 25px;
+      background: rgba(255,255,255,0.88);
+      border: 1px solid white;
+      border-radius: 25px;
+      box-shadow: 0 15px 45px #c87d9c25;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .duck {
+      font-size: 60px;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    h1 {
+      color: #b34475;
+      font-size: clamp(27px, 6vw, 40px);
+      margin: 12px 0;
+    }
+
+    .subtitle {
+      color: #876777;
+      line-height: 1.9;
+    }
+
+    button {
+      border: none;
+      background: linear-gradient(135deg, #e879a4, #bb6dd3);
+      color: white;
+      padding: 15px 25px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+      box-shadow: 0 7px 20px #d779a444;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+    .letter {
+      display: none;
+      margin-top: 25px;
+      animation: appear 0.7s ease;
+    }
+
+    .letter.show {
+      display: block;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .note {
+      padding: 22px;
+      margin: 15px 0;
+      border-radius: 20px;
+      line-height: 2;
+      font-size: 16px;
+    }
+
+    .pink {
+      background: #fff0f4;
+    }
+
+    .lavender {
+      background: #f3edff;
+    }
+
+    .peach {
+      background: #fff2e5;
+    }
+
+    .highlight {
+      color: #a83e6c;
+      font-weight: bold;
+    }
+
+    .ending {
+      text-align: center;
+      color: #a83e6c;
+      font-size: 21px;
+      font-weight: bold;
+      padding: 15px;
+    }
+
+    .footer {
+      text-align: center;
+      color: #9a7a8a;
+      font-size: 13px;
+      margin-top: 25px;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -30px;
+      pointer-events: none;
+      animation: floatUp linear infinite;
+      opacity: 0.6;
+      z-index: 0;
+    }
+
+    @keyframes floatUp {
+      to {
+        transform: translateY(-110vh) rotate(25deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 15px auto;
+        padding: 17px;
+      }
+
+      .note {
+        padding: 17px;
+        font-size: 15px;
+        line-height: 1.95;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header>
+      <div class="duck">🦆💗</div>
+
+      <h1>بصي يا بطوطة ❤️</h1>
+
+      <p class="subtitle">
+        فيه كلمتين عايزة أقولهم لك...
+        ومعاهم اعتذار صغير ومصالحة كبيرة 😂💌
+      </p>
+
+      <button id="openBtn" aria-expanded="false">
+        افتحي رسالتك يا بطوطة 💌
+      </button>
+    </header>
+
+    <section class="letter" id="letter">
+
+      <div class="note pink">
+        أولًا أنا آسفة لو زعلتك مني النهارده،
+        والله كان هزار ومكنتش أقصد أزعلك خالص،
+        إنتِ عارفة غلاوتك عندي يا فاطمة ❤️.
+      </div>
+
+      <div class="note peach">
+        عارفة، أنا لسه فاكرة إن أول مرة اتقابلنا
+        كانت بالصدفة في الميكروباص، مكنتش أعرف
+        إن الصدفة دي هتخلينا نسكن مع بعض في المدينة،
+        وإننا هنتعرف على بعض بالشكل ده 😂❤️.
+      </div>
+
+      <div class="note pink">
+        عايزة أقولك حاجة صغيرة يا بطوطة،
+        مش كل حد بيدخل حياتنا بيكون من نصيبنا
+        إنه يكمل فيها، وساعات ربنا بيبعد عننا ناس
+        علشان إحنا لسه مش شايفين الحكمة من بُعدهم،
+        ويمكن لو كانوا كملوا معانا كان وجعنا هيكون أكبر.
+
+        <br><br>
+
+        فمتزعليش نفسك على حد، ولا تيجي على نفسك
+        علشان أي حد، لأن راحتك وراحة بالك أهم من أي حاجة.
+        واللي مش من نصيبنا مش لازم نفضل نزعل عليه،
+        يمكن ربنا كاتب لنا الأحسن وإحنا لسه منعرفش. 🤍
+      </div>
+
+      <div class="note lavender">
+        وخليكي دايمًا بطوطة اللي بتضحك،
+        مش اللي بتداري وجعها ورا الضحك،
+        والطيبة والنضيفة من جوا. ❤️
+
+        <br><br>
+
+        أنا عارفة إن محدش يستاهل إنك تيجي على نفسك عشانه،
+        بس إنتِ نفسك تستاهلي إنك تكوني أفضل نسخة من نفسك،
+        وتعيشي مبسوطة ومرتاحة، وتهتمي بنفسك وبقلبك
+        زي ما بتدي اهتمامك لغيرك. 🫶🏻❤️
+      </div>
+
+      <div class="note peach" style="text-align:center">
+        <span class="highlight">
+          ربنا يفرح قلبك ويكتبلك أيام حلوة،
+          ويبعد عنك كل اللي يزعلك يا رب. 🤍
+        </span>
+      </div>
+
+      <div class="note pink">
+        وبعدين يا ستي، هو إحنا لسه هنبدأ سكن
+        وذكريات ومواقف مع بعض، تقومي تزعلي مني
+        من أولها؟ 😂😂❤️
+
+        <br><br>
+
+        <span class="highlight">
+          يلا بقى صالحيني يا بطوطة،
+          عشان أنا مش ناقصة خناقات في الشقة
+          من دلوقتي! 😂🫂❤️
+        </span>
+      </div>
+
+      <div class="ending">
+        صافي يا لبن؟ 🥹💕
+      </div>
+
+    </section>
+
+    <div class="footer">
+      اتعملت مخصوص لبطوطة بكل الحب 💗
+    </div>
+
+  </main>
+
+  <script>
+    const button = document.getElementById("openBtn");
+    const letter = document.getElementById("letter");
+
+    button.addEventListener("click", function () {
+      const isOpen = letter.classList.toggle("show");
+
+      button.setAttribute("aria-expanded", String(isOpen));
+
+      button.textContent = isOpen
+        ? "اقفلي الرسالة مؤقتًا 💗"
+        : "افتحي رسالتك يا بطوطة 💌";
+
+      if (isOpen) {
+        setTimeout(function () {
+          letter.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }, 100);
+      }
+    });
+
+    const symbols = ["♡", "♥", "✦", "💕"];
+
+    for (let i = 0; i < 15; i++) {
+      const heart = document.createElement("span");
+
+      heart.className = "heart";
+      heart.textContent = symbols[i % symbols.length];
+
+      heart.style.left = Math.random() * 100 + "%";
+      heart.style.animationDuration =
+        (9 + Math.random() * 9) + "s";
+      heart.style.animationDelay =
+        (-Math.random() * 15) + "s";
+      heart.style.fontSize =
+        (14 + Math.random() * 18) + "px";
+
+      document.body.appendChild(heart);
+    }
+  </script>
+
+</body>
+  </html>
+  
